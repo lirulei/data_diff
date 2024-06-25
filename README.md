@@ -1,10 +1,10 @@
 # data_diff
-用于比对mysql和mysql/pg之间的数据差异，前提是需要确保二者的列的顺序是一致的。
+用于比对mysql和mysql/pg/es之间的数据差异，mysql2mysql和mysql2pg需要确保二者的列的顺序是一致的，mysql2es二者的列顺序无所谓。
 
 ## 说明
 - mysql2mysql 用于源端和目标端都是MySQL的数据比对场景。
 - mysql2pg 用于源端是MySQL，目标端是PG的数据比对场景。
-- mysql2mysql和mysql2pg这2个工具只支持主键为整型单调递增。代码里写死了主键为id，如果主键非id的话，批量替换下即可。非自增主键的场景，目前脚本还不支持。
+- 特别注意：mysql2mysql和mysql2pg这2个工具只支持主键为整型单调递增。代码里写死了主键为id，如果主键非id的话，批量替换下即可。非自增主键的场景，目前脚本还不支持。
 - mysql2es 用于源端是MySQL，目标端是ES的数据比对场景。它会将差异的es id输出到redis queue中。
 
 ## 依赖
