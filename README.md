@@ -9,7 +9,7 @@
 
 ## 依赖
 ### mysql2mysql
-- pip3 install psycopg2==2.9.4
+- pip3 install mysql-connector-python==8.0.31
 ### mysql2pg
 - pip3 install psycopg2==2.9.4
 - pip3 install mysql-connector-python==8.0.31
